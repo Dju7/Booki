@@ -255,6 +255,7 @@ color: var(--blue)
     height: 100%;   
 }
 .cardpop-body {
+    width:55%;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -300,7 +301,7 @@ color: var(--blue)
     width: 22%;
     height: 440px;
     border-radius: 20px;
-    box-shadow: 10px 5px 5px grey; 
+    box-shadow: 10px 5px 5px var(--grey); 
 }
 .cardacti-img {
     object-fit: contain;
