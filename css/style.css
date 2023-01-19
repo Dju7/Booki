@@ -176,11 +176,14 @@ color: var(--blue)
     box-shadow: 10px 5px 5px  rgb(197, 196, 196);
 }
 .card-image {
+    position: relative;
     object-fit: contain;
+    width: 95%;
     margin: 5px;
     height: 140px;
 }
 .card-image img {
+    position: absolute;
     border-radius: 20px 20px 0 0;
     width: 100%;
     height: 100%;
@@ -242,6 +245,7 @@ color: var(--blue)
     overflow: hidden;
 }
 .cardpop-img {
+    position: relative;
     object-fit: contain;
     width: 45%;
     height:140px;
@@ -301,6 +305,7 @@ color: var(--blue)
     box-shadow: 10px 5px 5px var(--grey); 
 }
 .cardacti-img {
+    position: relative;
     object-fit: contain;
     height: 390px;
 }
@@ -320,6 +325,9 @@ color: var(--blue)
 footer {
     margin: 50px 0px 0px 0px;
     background-color: var(--grey);
+}
+footer a:hover{
+    color: var(--blue);
 }
 .footerlink {
     display: flex;
