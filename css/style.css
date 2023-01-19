@@ -1,0 +1,341 @@
+/* ... text formating ...*/
+
+:root {
+    --blue: #0065FC;
+    --blue2: #DEEBFF;
+    --grey: #F2F2F2;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+H1 {
+    Font-size: 1.4em;
+    font-weight: bold;
+}
+H2 {
+    Font-size: 1.2em;
+}
+H3 {
+    font-size: 1em;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ... structure elements ...*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    text-align: center; 
+    margin: 0;
+}
+nav li {
+    display: inline-block;
+    border-top: solid 3px transparent;
+    border-bottom: solid 3px transparent;
+    padding: 40px 50px;
+}
+nav li:hover {
+    border-top: solid 3px var(--blue);
+}
+nav a:hover {
+    color: var(--blue);
+}
+
+/* ... Main ... */
+
+/* ... Search form ...*/
+
+.searchbar {
+  display: flex;
+  flex-direction: row;  
+}
+.searchbar a {
+    background-color: var(--grey);
+    border-radius: 10px 0 0 10px;
+    padding: 12px;
+    color: black;
+}
+.search {
+    padding: 12px;
+    width: 200px;
+    border-style: none;
+    border: 0px;
+    font-weight: bold;
+    outline: 0;
+}
+.buttonsearch  {
+    font-weight: bold;
+    font-family: "raleway";
+    Font-size: 0.9em;
+    background-color: var(--blue);
+    border-style: none;
+    color: white;
+    width: 130px;
+    padding: 12px;
+    margin: 0;
+    border-radius: 0 10px 10px 0;
+}
+
+/* ... Filter menu ... */
+
+.filtermenu {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.filtermenu li {
+    display: inline;
+    border: solid 3px var(--grey);
+    border-radius: 20px 20px 20px 20px;
+    padding: 12px;
+    Margin-right: 60px;
+}
+.filtermenu li:hover {
+    background-color: var(--blue2);
+}
+.fa-dog {
+    margin-right: 15px;
+    color: var(--blue)
+}
+.fa-heart {
+    margin-right: 15px;
+    color: var(--blue)
+}
+.fa-person {
+    margin-right: 15px;
+    color: var(--blue)
+}.fa-money-bill-wave {
+    margin-right: 15px;
+    color: var(--blue)
+}
+
+/* ... info message ... */
+
+.infos {
+    display: flex;  
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.fa-info {
+    padding: 4px;
+    text-align: center;
+    border: solid 1px var(--grey);
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    color: var(--blue);
+    margin: auto 0;
+}
+
+/* ... Choose accomodation ... */
+
+.sec2 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.sec2 a:hover {
+color: var(--blue)
+
+}
+
+/* ... Booking place ... */
+
+.Acontainer {
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--grey);
+    padding: 10px 40px;
+    width: 65%;
+}
+.displayroom1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 35px;
+    padding: 10px;
+    margin: auto;
+}
+.card {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 30%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 5px 5px  rgb(197, 196, 196);
+}
+.card-image {
+    object-fit: contain;
+     margin: 5px;
+    height: 140px;
+}
+.card-image img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 100%;
+}
+.card-title h3 {
+    font-weight: bold;
+    margin: 1px 10px;
+}
+.card-title p {
+    margin: 0 10px;
+    font-size: 0.8em;
+}
+.card-star {
+    display:flex;
+    margin: 10px;
+    color: var(--blue);
+}
+
+.subinfo {
+    margin: 30px 0;
+}
+
+/* ... most popular ... */
+
+.Bcontainer {
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--grey);                  
+    padding: 10px 10px; 
+    width: 35%;
+}
+.Bcard {
+    display: flex;  
+    flex-direction: row;  
+    padding: 0 0 0 20px; 
+    
+}
+.fa-chart-line {
+    display: inline;
+    color: var(--blue);
+    margin: auto;
+    
+}
+.displayroom2 {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10px 20px 10px;
+    gap: 40px;
+    margin: auto;
+}
+.cardpop {
+    position: relative;
+    width: 95%;
+    border-radius: 20px;
+    background-color: white; 
+    box-shadow: 10px 5px 5px rgb(197, 196, 196);
+    display:flex;
+    box-sizing: border-box; 
+    overflow: hidden;
+}
+.cardpop-img {
+    object-fit: contain;
+    width: 45%;
+    height:140px;
+    margin: 5px;
+}
+.cardpop-img img {
+    border-radius: 20px 0 0 20px;
+    width: 100%;
+    height: 100%;   
+}
+.cardpop-body {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cardpop-title {
+    justify-content: center;
+    padding: 0 10px;
+}
+.cardpop-title h3 {
+    font-weight: bold;
+    margin: 10px 0;
+}
+.cardpop-title p {
+    font-size: 0.8em;
+    margin: auto;
+}
+.cardpop-star {
+    display: flex;
+    color: var(--blue);
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+/* ... Section 3: Activity ... */
+
+.sec3 a:hover {
+    color: var(--blue);
+}
+.displayactivity {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+    margin: auto;
+}
+.cardacti {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; 
+    overflow: hidden;
+    width: 22%;
+    height: 440px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px grey; 
+}
+.cardacti-img {
+    object-fit: contain;
+    height: 390px;
+}
+.cardacti-img img {
+    width: 100%;
+    height: 390px;
+    border-radius: 20px 20px 0 0;
+}
+.cardacti-title {
+    width: 100%;
+    height: 40px;
+    margin: 0 10px;
+}
+
+/* ... footer ... */
+
+footer {
+    margin: 50px 0px 0px 0px;
+    background-color: var(--grey);
+}
+.footerlink {
+    display: flex;
+    flex-direction: row;
+    gap: 170px;
+    margin: 10px 0px 0px 50px;
+    padding: 30px;
+}
+.element1 {
+    width:20%
+}
+.element2 {
+    width: 20%;
+}
+.element3 {
+    width: 20%;
+}
