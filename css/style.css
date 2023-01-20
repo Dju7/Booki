@@ -196,7 +196,7 @@ color: var(--blue)
 }
 .card-title p {
     margin: 0 10px;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 .card-star {
     display:flex;
@@ -232,11 +232,10 @@ color: var(--blue)
     
 }
 .displayroom2 {
-    display: flex;
     width: 90%;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: stretch;
     padding: 10px 10px 20px 10px;
     gap: 40px;
     margin: auto;
@@ -278,7 +277,7 @@ color: var(--blue)
     margin: 10px 0;
 }
 .cardpop-title p {
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin: auto;
 }
 .cardpop-star {
