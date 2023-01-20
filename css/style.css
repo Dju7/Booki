@@ -20,6 +20,9 @@ H2 {
 H3 {
     font-size: 1em;
 }
+span {
+    font-weight: bold;
+}
 a {
     text-decoration: none;
     color: black;
@@ -168,7 +171,6 @@ color: var(--blue)
     margin: auto;
 }
 .card {
-    overflow: hidden;
     box-sizing: border-box;
     width: 30%;
     border-radius: 20px;
@@ -177,7 +179,7 @@ color: var(--blue)
 }
 .card-image {
     position: relative;
-    object-fit: contain;
+    object-fit: cover;
     width: 95%;
     margin: 5px;
     height: 140px;
@@ -216,14 +218,17 @@ color: var(--blue)
 }
 .Bcard {
     display: flex;  
-    flex-direction: row;  
-    padding: 0 0 0 20px; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 10px 0 10px; 
+    margin: auto;
+    width: 90%;
     
 }
 .fa-chart-line {
-    display: inline;
     color: var(--blue);
-    margin: auto;
+    margin-right: 20px;
     
 }
 .displayroom2 {
@@ -231,22 +236,23 @@ color: var(--blue)
     width: 90%;
     flex-direction: column;
     justify-content: center;
+    align-items: stretch;
     padding: 10px 10px 20px 10px;
     gap: 40px;
     margin: auto;
 }
 .cardpop {
+    position: relative;
     width: 95%;
     border-radius: 20px;
     background-color: white; 
     box-shadow: 10px 5px 5px rgb(197, 196, 196);
-    display:flex;
+    display: flex;
     box-sizing: border-box; 
-    overflow: hidden;
+    margin: auto;
 }
 .cardpop-img {
-    position: relative;
-    object-fit: contain;
+    object-fit: cover;
     width: 45%;
     height:140px;
     margin: 5px;
@@ -258,6 +264,7 @@ color: var(--blue)
 }
 .cardpop-body {
     width:55%;
+    height: 150px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -306,7 +313,7 @@ color: var(--blue)
 }
 .cardacti-img {
     position: relative;
-    object-fit: contain;
+    object-fit: cover;
     height: 390px;
 }
 .cardacti-img img {
@@ -344,4 +351,55 @@ footer a:hover{
 }
 .element3 {
     width: 20%;
+}
+/* --- Media query: First breackpoint 992px-768px --- */
+
+@media screen and (max-width:992px) and (min-width: 769px) {
+
+    body {
+        max-width: 992px;
+        padding: 0 20px;
+    }
+
+    .sec2 {
+        flex-direction: column;
+    }
+    .filtermenu li {
+        margin-right: 20px;
+    }
+    .Acontainer {
+        width: 90%;
+    }
+    .Bcontainer {
+        width: 95%;
+    }
+    .displayroom2 {
+        width: 95%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1px;
+    }
+    .cardpop {
+        width: 250px;
+        margin: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .cardacti {
+        height: 340px;
+    }
+
+    .cardacti-img{
+        position: relative;
+        height: 290px;
+    }
+    .cardacti-img img {
+        height:290px;
+    }
+    .cardacti-title {
+        height: 40px;
+        font-size: 0.9em;
+    }
+    
 }
