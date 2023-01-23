@@ -65,26 +65,28 @@ nav a:hover {
 .searchbar a {
     background-color: var(--grey);
     border-radius: 10px 0 0 10px;
-    padding: 12px;
+    padding: 14px;
     color: black;
 }
 .search {
-    padding: 12px;
+    padding: 14px;
     width: 200px;
+    width: 230px;
     border-style: none;
     border: 0px;
+    font-size: 1.1em;
     font-weight: bold;
     outline: 0;
 }
 .buttonsearch1  {
     font-weight: bold;
     font-family: "raleway";
-    Font-size: 0.9em;
+    Font-size: 1.1em;
     background-color: var(--blue);
     border-style: none;
     color: white;
-    width: 130px;
-    padding: 12px;
+    width: 140px;
+    padding: 14px;
     margin: 0;
     border-radius: 0 10px 10px 0;
 }
@@ -93,7 +95,7 @@ nav a:hover {
     border-style: none;
     color: white;
     width: 50px;
-    padding: 12px;
+    padding: 14px;
     margin: 0;
     border-radius: 0 10px 10px 0;
     display: none;
@@ -107,13 +109,15 @@ nav a:hover {
     flex-direction: row;
     align-items: center;
     margin-top: 20px;
+
 }
 .filtermenu li {
     display: inline-block;
     border: solid 3px var(--grey);
-    border-radius: 20px 20px 20px 20px;
-    padding: 12px;
-    Margin-right: 60px;
+    border-radius: 30px;
+    padding: 14px;
+    margin-right: 50px;
+    font-size: 1em;
 }
 .filtermenu li:hover {
     background-color: var(--blue2);
@@ -141,6 +145,7 @@ nav a:hover {
     flex-direction: row; 
     flex-wrap: nowrap;
     gap: 20px;
+    margin-bottom: 20px;
 }
 .fa-info {
     padding: 4px;
@@ -168,7 +173,7 @@ color: var(--blue)
 /* ... Booking place ... */
 
 .Acontainer {
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     background-color: var(--grey);
     padding: 10px 40px;
     width: 65%;
@@ -222,7 +227,7 @@ color: var(--blue)
 /* ... most popular ... */
 
 .Bcontainer {
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     background-color: var(--grey);                  
     padding: 10px 10px; 
     width: 35%;
