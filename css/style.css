@@ -76,7 +76,7 @@ nav a:hover {
     font-weight: bold;
     outline: 0;
 }
-.buttonsearch  {
+.buttonsearch1  {
     font-weight: bold;
     font-family: "raleway";
     Font-size: 0.9em;
@@ -88,12 +88,24 @@ nav a:hover {
     margin: 0;
     border-radius: 0 10px 10px 0;
 }
+.buttonsearch2  {
+    background-color: var(--blue);
+    border-style: none;
+    color: white;
+    width: 50px;
+    padding: 12px;
+    margin: 0;
+    border-radius: 0 10px 10px 0;
+    display: none;
+}
+
 
 /* ... Filter menu ... */
 
 .filtermenu {
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-top: 20px;
 }
 .filtermenu li {
@@ -185,7 +197,6 @@ color: var(--blue)
     height: 140px;
 }
 .card-image img {
-    position: absolute;
     border-radius: 20px 20px 0 0;
     width: 100%;
     height: 100%;
@@ -252,8 +263,8 @@ color: var(--blue)
 }
 .cardpop-img {
     object-fit: cover;
+    height: 150px;
     width: 45%;
-    height:140px;
     margin: 5px;
 }
 .cardpop-img img {
@@ -320,7 +331,7 @@ color: var(--blue)
 }
 .cardacti-img img {
     width: 100%;
-    height: 390px;
+    height: 100%;
     border-radius: 20px 20px 0 0;
 }
 .cardacti-title {
@@ -356,16 +367,16 @@ footer a:hover{
 }
 /* --- Media query: First breackpoint 992px-768px --- */
 
-@media screen and (max-width:992px) and (min-width: 769px) {
+@media screen and (max-width:992px) and (min-width:769px) {
 
     body {
         max-width: 992px;
         margin: 0 auto;
     }
-    header {
+    main {
         padding: 0 30px;
     }
-    main {
+    header {
         padding: 0 30px;
     }
     footer {
@@ -393,10 +404,15 @@ footer a:hover{
         gap: 10px;
     }
     .cardpop {
-        width: 250px;
+        max-width: 250px;
         margin: 0 0 10px 0;
     }
+    .cardpop-img img{
+        width: 100%;
+
+    }
     .cardacti {
+        width:100%;
         height: 320px;
     }
 
@@ -405,7 +421,7 @@ footer a:hover{
         height: 260px;
     }
     .cardacti-img img {
-        height:260px;
+        height:100%;
     }
     .cardacti-title {
         height: 60px;
@@ -422,84 +438,124 @@ footer a:hover{
 @media screen and (max-width:768px) {
     body {
         max-width: 768px;
+        margin: 0;
     }
     header {
         flex-direction: column;
         justify-content: center;
-        padding: 0 20px;
     }
-    main {
-        padding: 0 20px;
+    .sec1 {
+        padding: 0 60px;
     }
     nav ul{
-        text-align: right;
+        text-align: left;
+        width: 550px;
+    
     }
     nav li {
         padding: 50px 50px 20px 50px;
         margin: 0;
+        width: 30%;
         border-bottom: solid 3px var(--grey);
     }
     nav li:hover {
         border-top: solid 3px transparent;
         border-bottom: solid 3px var(--blue);  
     }
-    .filtermenu {
-        flex-wrap: wrap;
-        align-items: center;
-        padding: 0;
-        margin: 0;
+    .buttonsearch1 {
+        display: none;
     }
-    .filtermenu ul li {
-        margin: 5px 10px;
+    .buttonsearch2 {
+        display: inline-block;
+    }
+    .filtermenu {
+        flex-direction: column;
+        align-items: start;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .filtermenu ul {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 450px;
+        padding: 0;
     }
     .filtermenu li {
-        margin: 0;
+        margin-right: 70px;
+    }
+    .filtermenu ul li {
+        margin: 10px 5px;
     }
     .sec2 {
         flex-direction: column-reverse;
         width: 100%;
         align-items: center;
-    }
-    .activity {
-        padding: 20px 40px;
+    
     }
     .Acontainer {
-        width: 90%;
+        width: 100%;
         padding: 0;
+        background-color: white;
+    }
+    .Acontainer H1 {
+        margin-left: 50px;
+
     }
     .card {
-        width: 85%;
-        Height: 250px;
+        width: 80%;
+        Height: 230px;
     }
     .card-image {
         width: 97%;
     }
-    .Bcontainer {
-        width: 90%;
+    .card-image img {
+        Width: 100%;
 
+    }
+    .Bcontainer {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        border-radius: 0 0 0 0;
+        margin-bottom: 10px;
+    }
+    .Bcontainer H1 {
+        margin-left: 30px;
+    }
+    .Bcard {
+        width: 90%;
     }
     .displayroom1 {
     flex-direction: column;
     align-items: center;
     width: 100%;
     padding: 0;
+    gap: 10px;
+}
+    .subinfo {
+    margin-left: 50px;
 }
     .displayroom2 {
         width: 100%;
-        align-items: center;
+        gap: 10px;
     }
     .cardpop {
-        width: 90%;
+        width: 80%;
         height: 180px;
     }
     .cardpop-img {
         height: 170px;
     }
-    
-
+    .cardpop-img img{
+        width: 100%;
+    }
+    .activity {
+    margin-left: 20px;
+}
     .displayactivity {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
     .cardacti{
         width: 75%;
