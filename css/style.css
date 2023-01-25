@@ -47,7 +47,6 @@ header {
 }
 .navigation ul {
     list-style: none;
-    text-align: center; 
     margin: 0;
 }
 .navigation li {
@@ -79,7 +78,6 @@ header {
 }
 .search {
     padding: 14px;
-    width: 200px;
     width: 230px;
     border-style: none;
     border: 0px;
@@ -97,7 +95,7 @@ header {
     width: 140px;
     padding: 14px;
     margin: 0;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 20px 20px 0;
 }
 .buttonsearch2  {
     background-color: var(--blue);
@@ -106,7 +104,7 @@ header {
     width: 50px;
     padding: 14px;
     margin: 0;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 20px 20px 0;
     display: none;
 }
 
@@ -117,14 +115,12 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    min-width: 950px;
     margin-top: 10px;
 }
 .filtermenu li {
     display: inline-block;
     border: solid 3px var(--grey);
-    border-radius: 30px;
+    border-radius: 100vw;
     margin-right: 40px;
     padding: 14px;
     font-size: 1em;
@@ -143,7 +139,8 @@ header {
 .fa-person {
     margin-right: 15px;
     color: var(--blue)
-}.fa-money-bill-wave {
+}
+.fa-money-bill-wave {
     margin-right: 15px;
     color: var(--blue)
 }
@@ -176,23 +173,27 @@ span {
 
 /* ... Choose accomodation ... */
 
-.sec2 {
+.accomodation-sector {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
-.sec2 a:hover {
+.accomodation-sector a:hover {
 color: var(--blue)
 
 }
 
 /* ... Booking place ... */
 
-.Acontainer {
+.box-accomodation {
     border-radius: 20px;
     background-color: var(--grey);
     padding: 10px 40px;
     width: 65%;
+}
+#accomodation-title {
+    width: 90%;
+    margin: 0 20px;
 }
 .displayroom1 {
     display: flex;
@@ -203,130 +204,137 @@ color: var(--blue)
     padding: 10px;
     margin: auto;
 }
-.card {
+.card-accomodation {
     flex: 1;
     min-width: 200px;
     padding: 5px;
     border-radius: 20px;
     background-color: white;
-    box-shadow: 10px 5px 5px  rgb(197, 196, 196);
+    box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0, 1);
 }
-.card-image {
+.card-accomodation-image {
     width: 100%;
     height: 140px;
 }
-.card-image img {
+.card-accomodation-image img {
     object-fit: cover;
     border-radius: 15px 15px 0 0;
     width: 100%;
     height: 100%;
 }
-.card-title h3 {
+.card-accomodation-title h3 {
     font-weight: bold;
     margin: 1px 10px;
 }
-.card-title p {
+.card-accomodation-title p {
     margin: 0 10px;
     font-size: 0.9em;
 }
-.card-star {
+.card-accomodation-star {
     display:flex;
     margin: 10px;
     color: var(--blue);
 }
+.card-accomodation span {
+    color: var(--grey);
+}
 
 .subinfo {
-    margin: 30px 0;
+    margin: 30px 15px;
 }
 
 /* ... most popular ... */
 
-.Bcontainer {
+.box-popular {
     border-radius: 20px;
     background-color: var(--grey);                  
-    padding: 10px 10px; 
+    padding: 10px 40px; 
     width: 35%;
 }
-.Bcard {
+.popular-title {
     display: flex;  
     flex-direction: row; 
     justify-content: space-between; 
     align-items: center;
-    padding: 0 10px 0 10px; 
-    margin: auto;
-    width: 90%;
+    padding: 0; 
+    margin: 0 0 0 10px;
+    width: 95%;
     
 }
 .fa-chart-line {
     color: var(--blue);
-    margin-right: 20px;
+    margin-right: 10px;
     
 }
 .displayroom2 {
-    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 10px 10px 20px 10px;
-    gap: 40px;
+    gap: 35px;
     margin: auto;
 }
-.cardpop {
-    width:95%;
+.cardpopular {
+    flex: 1;
+    min-width: 200px;
     border-radius: 20px;
     padding: 5px;
     background-color: white; 
-    box-shadow: 10px 5px 5px rgb(197, 196, 196);
+    box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0, 1);
     display: flex; 
     margin: auto;
 }
-.cardpop a {
+.cardpopular a {
     width: 100%;
     height: 150px;
     display: flex;
 }
-.cardpop-img {
+.cardpopular-img {
     height: 150px;
     width: 45%;
 }
-.cardpop-img img {
+.cardpopular-img img {
     object-fit: cover;
     border-radius: 15px 0 0 15px;
     width: 100%;
     height: 100%;   
 }
-.cardpop-body {
+.cardpopular-body {
     width:55%;
     height: 150px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.cardpop-title {
+.cardpopular-title {
     justify-content: center;
     padding: 0 10px;
 }
-.cardpop-title h3 {
+.cardpopular-title h3 {
     font-weight: bold;
     margin: 10px 0;
 }
-.cardpop-title p {
+.cardpopular-title p {
     font-size: 0.9em;
     margin: auto;
 }
-.cardpop-star {
+.cardpopular-star {
     display: flex;
     color: var(--blue);
     margin-bottom: 10px;
     margin-left: 10px;
 }
+.cardpopular span {
+    color: var(--grey);
+}
+
 
 /* ... Section 3: Activity ... */
 
-.sec3 a:hover {
+.activity-sector a:hover {
     color: var(--blue);
 }
-.activity {
+#activity-title {
     padding: 30px 0 5px;
 }
 .displayactivity {
@@ -337,25 +345,25 @@ color: var(--blue)
     gap: 50px;
     margin: auto;
 }
-.cardacti {
+.cardactivity {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     width: 23%;
     height: 440px;
     border-radius: 20px;
-    box-shadow: 10px 5px 5px var(--grey); 
+    box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0, 1); 
 }
-.cardacti-img {
+.cardactivity-img {
     height: 390px;
 }
-.cardacti-img img {
+.cardactivity-img img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 20px 20px 0 0;
 }
-.cardacti-title {
+.cardactivity-title {
     width: 100%;
     height: 40px;
     margin: 0 10px;
@@ -374,16 +382,16 @@ footer a:hover{
     display: flex;
     flex-direction: row;
     gap: 170px;
-    margin: 10px 0px 0px 50px;
+    margin: 10px 0px 0px 30px;
     padding: 30px;
 }
-.element1 {
+.footer-element1 {
     width:20%
 }
-.element2 {
+.footer-element2 {
     width: 20%;
 }
-.element3 {
+.footer-element3 {
     width: 20%;
 }
 /* --- Media query: First breackpoint 992px-768px --- */
@@ -397,23 +405,24 @@ footer a:hover{
     main, header, footer {
         padding: 0 30px;
     }
-    .sec2 {
+    .accomodation-sector {
         flex-direction: column;
     }
-    .filtermenu {
-        min-width: none;
-    }
-    .filtermenu h2 {
-    width:auto;
+    .filtermenu ul {
+        padding-left: 5px;
+
     }
     .filtermenu li {
         margin-right: 20px;
     }
-    .Acontainer {
+    .filtermenu h2 {
+        margin: 10px;
+    }
+    .box-accomodation {
         width: 100%;
         padding: 30px;
     }
-    .Bcontainer {
+    .box-popular {
         width: 100%;
         padding: 5px;
     }
@@ -421,35 +430,47 @@ footer a:hover{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 10px;
+        padding: 10px 40px;
         gap: 10px;
     }
-    .cardpop {
+    .cardpopular {
+        flex: 1;
         max-width: 250px;
         margin: 0 0 10px 0;
     }
-    .cardpop-img img{
+    .cardpopular-img img{
         width: 100%;
 
     }
-    .cardacti {
+    .cardactivity {
         width:100%;
         height: 320px;
     }
 
-    .cardacti-img{
+    .cardactivity-img{
         position: relative;
         height: 260px;
     }
-    .cardacti-img img {
+    .cardactivity-img img {
         height:100%;
     }
-    .cardacti-title {
+    .cardactivity-title {
         height: 60px;
         font-size: 0.9em;
     }
-    footer {
-        gap: 20%;
+    .footerlink {
+        padding: 10px 0 0 10px;
+        margin: 0 auto;
+        gap: 10%;
+    }
+    .footer-element1 {
+        width: 30%;
+    }
+    .footer-element2 {
+        width: 30%;
+    }
+    .footer-element3 {
+        width: 30%;
     }
     
 }
@@ -460,6 +481,7 @@ footer a:hover{
     body {
         max-width: 768px;
         margin: 0;
+        padding: 0;
     }
     main, header, footer {
         padding: 0;
@@ -473,9 +495,12 @@ footer a:hover{
         width: 100%;
         margin: 0;
     }
+    .navigation ul {
+        padding: 0;
+        text-align: center;
+    }
 
     .navigation li {
-        padding: 50px 0px 20px 0px;
         margin: 0;
         width: 49%;
         border-bottom: solid 3px var(--grey);
@@ -484,8 +509,15 @@ footer a:hover{
         border-top: solid 3px transparent;
         border-bottom: solid 3px var(--blue);  
     }
-    .sec1 {
-        padding: 0 40px;
+    .header-sector {
+        padding: 0 20px;
+    }
+    .searchbar {
+        min-width: 330px;
+    }
+    .search {
+        width: 70%;
+        min-width: 220px;
     }
     .buttonsearch1 {
         display: none;
@@ -499,49 +531,69 @@ footer a:hover{
         padding: 0;
         margin-top: 10px;
     }
+    .filtermenu h2 {
+        margin: 3px;
+    }
+    .filtermenu span {
+        font-size: 0.8em;
+    }
     .filtermenu ul {
         display: flex;
         flex-wrap: wrap;
-        min-width: 450px;
+        width: 90%;
+        min-width: 400px;
         padding: 0;
+        margin: 0;
     }
     .filtermenu li {
+        width: 40%;
+        padding: 14px 5px;
         margin-right: 70px;
+    }
+    .fa-dog {
+        margin-right: 10px;
+    }
+    .fa-heart {
+        margin-right: 10px;
+    }
+    .fa-person {
+        margin-right: 10px;
+    }
+    .fa-money-bill-wave {
+        margin-right: 10px;  
     }
     .filtermenu ul li {
         margin: 10px 5px;
     }
-    .sec2 {
+    .accomodation-sector {
         flex-direction: column-reverse;
-        padding: 0 20px;
+        padding: 0;
         width: 100%;
         align-items: center;
-        border: solid 1px;
     }
     .displayroom1 {
         flex-direction: column;
         align-items: center;
         width: 100%;
         gap: 15px;
-        border: solid 1px;
     }
-    .Acontainer {
+    .box-accomodation {
         width: 100%;
         background-color: white;
         padding: 0;
     }
-    .Acontainer H1 {
-        margin-left: 60px;
+    #accomodation-title {
+        margin-left: 30px;
     }
-    .card {
-        width: 80%;
-        Height: 250px;
+    .card-accomodation {
+        width: 90%;
+        Height: 280px;
         padding: 5px
     }
-    .card-image {
+    .card-accomodation-image {
         width: 100%;
     }
-    .Bcontainer {
+    .box-popular {
         width: 100%;
         padding: 0;
         border-radius: 0;
@@ -550,55 +602,66 @@ footer a:hover{
     .displayroom2 {
         width: 100%;
         gap: 15px;
-        border: solid 1px;
     }
-    .Bcontainer H1 {
-        margin-left: 30px;
-    }
-    .Bcard {
+    .popular-title {
         width: 90%;
+        margin-left: 20px;
+        padding: 0 10px;
     }
    
     .subinfo {
-    margin-left: 60px;
-    border: solid 1px;
-
+   display: none;
     }
     
-    .cardpop {
-        width: 80%;
+    .cardpopular {
+        width: 90%;
         height: 180px;
     }
-    .cardpop-img {
+    .cardpopular-img {
         height: 170px;
     }
-    .cardpop-img img{
+    .cardpopular-img img{
         width: 100%;
     }
-    .activity {
+    #activity-title {
     margin-left: 40px;
     }
     .displayactivity {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    margin-bottom: 40px;
     }
-    .cardacti{
-        width: 75%;
-        height: 300px;
-    }
-    .cardacti-img {
+    .cardactivity {
+        width: 80%;
         height: 250px;
     }
-    .cardacti-img img {
-        height: 250px;
+    .cardactivity-img {
+        height: 200px;
     }
-    .cardacti-title {
+    .cardactivity-img img {
+        height: 200px;
+    }
+    .cardactivity-title {
         height: 50px;
     }
-
-    .footerlink{
-    gap: 20%;
+    footer {
+        margin: 0 auto;
+    }
+    .footerlink {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 5px;
+        gap: 10px;
+    }
+    .footer-element1 {
+        width: 80%;
+    }
+    .footer-element2 {
+        width: 80%;
+    }
+    .footer-element3 {
+        width: 80%;
     }
 
 }
