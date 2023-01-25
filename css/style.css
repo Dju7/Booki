@@ -37,7 +37,9 @@ a {
     color: black;
 }
 
-/* ... structure elements ...*/
+/* ... Box structure ...*/
+
+/* ... Header ... */
 
 header {
     display: flex;
