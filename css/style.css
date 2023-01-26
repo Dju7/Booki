@@ -47,6 +47,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 .navigation ul {
     list-style: none;
     margin: 0;
@@ -60,7 +61,7 @@ header {
 .navigation li:hover {
     border-top: solid 3px var(--blue);
 }
-.navigation a:hover {
+.navigation a:hover, .activity-sector a:hover, .accomodation-sector a:hover, footer a:hover {
     color: var(--blue);
 }
 
@@ -69,8 +70,7 @@ header {
 /* ... Search form ...*/
 
 .searchbar {
-  display: flex;
-  flex-direction: row;  
+  display: flex; 
 }
 .searchbar a {
     background-color: var(--grey);
@@ -85,6 +85,7 @@ header {
     border: 0px;
     font-size: 1.1em;
     font-weight: bold;
+    color: black;
     outline: 0;
 }
 .buttonsearch1  {
@@ -115,7 +116,6 @@ header {
 
 .filtermenu {
     display: flex;
-    flex-direction: row;
     align-items: center;
     margin-top: 10px;
 }
@@ -125,38 +125,21 @@ header {
     border-radius: 100vw;
     margin-right: 40px;
     padding: 14px;
-    font-size: 1em;
 }
 .filtermenu li:hover {
     background-color: var(--blue2);
 }
-.fa-dog {
+.fa-dog, .fa-heart, .fa-person, .fa-money-bill-wave {
     margin-right: 15px;
-    color: var(--blue)
-}
-.fa-heart {
-    margin-right: 15px;
-    color: var(--blue)
-}
-.fa-person {
-    margin-right: 15px;
-    color: var(--blue)
-}
-.fa-money-bill-wave {
-    margin-right: 15px;
-    color: var(--blue)
-}
-span {
-    font-size: 1em;
+    color: var(--blue);
+    font-size: 1.1em;
 }
 
 /* ... info message ... */
 
 .infos {
     display: flex;  
-    flex-direction: row; 
     align-items: center;
-    flex-wrap: nowrap;
     gap: 20px;
     margin-bottom: 20px;
 }
@@ -177,12 +160,7 @@ span {
 
 .accomodation-sector {
     display: flex;
-    flex-direction: row;
     gap: 30px;
-}
-.accomodation-sector a:hover {
-color: var(--blue)
-
 }
 
 /* ... Booking place ... */
@@ -190,7 +168,7 @@ color: var(--blue)
 .box-accomodation {
     border-radius: 20px;
     background-color: var(--grey);
-    padding: 10px 40px;
+    padding: 10px 30px;
     width: 65%;
 }
 #accomodation-title {
@@ -199,7 +177,6 @@ color: var(--blue)
 }
 .displayroom1 {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     gap: 35px;
@@ -212,7 +189,7 @@ color: var(--blue)
     padding: 5px;
     border-radius: 20px;
     background-color: white;
-    box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0, 1);
+    box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0.1);
 }
 .card-accomodation-image {
     width: 100%;
@@ -226,7 +203,7 @@ color: var(--blue)
 }
 .card-accomodation-title h3 {
     font-weight: bold;
-    margin: 1px 10px;
+    margin: 5px 10px;
 }
 .card-accomodation-title p {
     margin: 0 10px;
@@ -236,10 +213,13 @@ color: var(--blue)
     display:flex;
     margin: 10px;
     color: var(--blue);
+    font-size: 0.9em;
 }
 .card-accomodation span {
     color: var(--grey);
 }
+
+/* ... More informations ... */
 
 .subinfo {
     margin: 30px 15px;
@@ -250,12 +230,11 @@ color: var(--blue)
 .box-popular {
     border-radius: 20px;
     background-color: var(--grey);                  
-    padding: 10px 40px; 
+    padding: 10px 30px; 
     width: 35%;
 }
 .popular-title {
     display: flex;  
-    flex-direction: row; 
     justify-content: space-between; 
     align-items: center;
     padding: 0; 
@@ -277,13 +256,13 @@ color: var(--blue)
     margin: auto;
 }
 .cardpopular {
+    display: flex; 
     flex: 1;
     min-width: 200px;
     border-radius: 20px;
     padding: 5px;
     background-color: white; 
-    box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0, 1);
-    display: flex; 
+    box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0.1);
     margin: auto;
 }
 .cardpopular a {
@@ -325,6 +304,7 @@ color: var(--blue)
     color: var(--blue);
     margin-bottom: 10px;
     margin-left: 10px;
+    font-size: 0.9em;
 }
 .cardpopular span {
     color: var(--grey);
@@ -333,28 +313,24 @@ color: var(--blue)
 
 /* ... Section 3: Activity ... */
 
-.activity-sector a:hover {
-    color: var(--blue);
-}
 #activity-title {
     padding: 30px 0 5px;
 }
 .displayactivity {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    width: 100%;
     gap: 50px;
     margin: auto;
 }
 .cardactivity {
+    flex: 1;
+    min-width: 130px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    width: 23%;
     height: 440px;
     border-radius: 20px;
-    box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0, 1); 
+    box-shadow: 0px 3px 15px  rgba(0, 0, 0, 0.1); 
 }
 .cardactivity-img {
     height: 390px;
@@ -367,7 +343,7 @@ color: var(--blue)
 }
 .cardactivity-title {
     width: 100%;
-    height: 40px;
+    height: 50px;
     margin: 0 10px;
 }
 
@@ -377,24 +353,23 @@ footer {
     margin: 50px 35px 0px 35px;
     background-color: var(--grey);
 }
-footer a:hover{
-    color: var(--blue);
-}
 .footerlink {
     display: flex;
-    flex-direction: row;
     gap: 170px;
     margin: 10px 0px 0px 30px;
     padding: 30px;
 }
 .footer-element1 {
-    width:20%
+    flex: 1;
+    min-width: 100px;
 }
 .footer-element2 {
-    width: 20%;
+    flex: 1;
+    min-width: 100px;
 }
 .footer-element3 {
-    width: 20%;
+    flex: 1;
+    min-width: 100px;
 }
 /* --- Media query: First breackpoint 992px-768px --- */
 
@@ -410,15 +385,17 @@ footer a:hover{
     .accomodation-sector {
         flex-direction: column;
     }
+    .filtermenu {
+        min-width: 800px;
+    }
     .filtermenu ul {
         padding-left: 5px;
-
     }
     .filtermenu li {
-        margin-right: 20px;
+        margin-right: 15px;
     }
     .filtermenu h2 {
-        margin: 10px;
+        margin-right: 10px;
     }
     .box-accomodation {
         width: 100%;
@@ -442,13 +419,11 @@ footer a:hover{
     }
     .cardpopular-img img{
         width: 100%;
-
     }
     .cardactivity {
         width:100%;
         height: 320px;
     }
-
     .cardactivity-img{
         position: relative;
         height: 260px;
@@ -463,16 +438,6 @@ footer a:hover{
     .footerlink {
         padding: 10px 0 0 10px;
         margin: 0 auto;
-        gap: 10%;
-    }
-    .footer-element1 {
-        width: 30%;
-    }
-    .footer-element2 {
-        width: 30%;
-    }
-    .footer-element3 {
-        width: 30%;
     }
     
 }
@@ -512,13 +477,12 @@ footer a:hover{
         border-bottom: solid 3px var(--blue);  
     }
     .header-sector {
-        padding: 0 20px;
+        padding: 0 15px;
     }
     .searchbar {
         min-width: 330px;
     }
     .search {
-        width: 70%;
         min-width: 220px;
     }
     .buttonsearch1 {
@@ -656,14 +620,6 @@ footer a:hover{
         padding: 20px 5px;
         gap: 10px;
     }
-    .footer-element1 {
-        width: 80%;
-    }
-    .footer-element2 {
-        width: 80%;
-    }
-    .footer-element3 {
-        width: 80%;
-    }
+   
 
 }
