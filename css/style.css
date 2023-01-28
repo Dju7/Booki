@@ -4,7 +4,6 @@
 box-sizing: border-box;
 }
 
-
 :root {
     --blue: #0065FC;
     --blue2: #DEEBFF;
@@ -32,6 +31,7 @@ H3 {
 span {
     font-weight: bold;
 }
+
 a {
     text-decoration: none;
     color: black;
@@ -74,7 +74,7 @@ header {
 }
 .searchbar a {
     background-color: var(--grey);
-    border-radius: 10px 0 0 10px;
+    border-radius: 15px 0 0 15px;
     padding: 14px;
     color: black;
 }
@@ -98,16 +98,17 @@ header {
     width: 140px;
     padding: 14px;
     margin: 0;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 15px 15px 0;
 }
 .buttonsearch2  {
     background-color: var(--blue);
     border-style: none;
     color: white;
+    font-size: 1.1em;
     width: 50px;
     padding: 14px;
     margin: 0;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 15px 15px 0;
     display: none;
 }
 
@@ -121,7 +122,7 @@ header {
 }
 .filtermenu li {
     display: inline-block;
-    border: solid 3px var(--grey);
+    border: solid 2px #D9D9D9;
     border-radius: 100vw;
     margin-right: 40px;
     padding: 14px;
@@ -130,9 +131,9 @@ header {
     background-color: var(--blue2);
 }
 .fa-dog, .fa-heart, .fa-person, .fa-money-bill-wave {
-    margin-right: 15px;
+    margin-right: 13px;
     color: var(--blue);
-    font-size: 1.1em;
+    font-size: 1.2em;
 }
 
 /* ... info message ... */
@@ -211,7 +212,7 @@ header {
 }
 .card-accomodation-star {
     display:flex;
-    margin: 10px;
+    margin: 10px 10px 5px 10px;
     color: var(--blue);
     font-size: 0.9em;
 }
@@ -392,7 +393,7 @@ footer {
         padding-left: 5px;
     }
     .filtermenu li {
-        margin-right: 15px;
+        margin-right: 14px;
     }
     .filtermenu h2 {
         margin-right: 10px;
@@ -479,17 +480,16 @@ footer {
     .header-sector {
         padding: 0 15px;
     }
-    .searchbar {
-        min-width: 330px;
-    }
     .search {
-        min-width: 220px;
+        width: 80%;
+        min-width: 80px;
     }
     .buttonsearch1 {
         display: none;
     }
     .buttonsearch2 {
         display: inline-block;
+        position: absolute;
     }
     .filtermenu {
         flex-direction: column;
@@ -621,5 +621,4 @@ footer {
         gap: 10px;
     }
    
-
 }
