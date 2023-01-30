@@ -1,5 +1,3 @@
-/* ... text formating ... */
-
 * {
 box-sizing: border-box;
 }
@@ -46,6 +44,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .navigation ul {
@@ -69,6 +68,9 @@ header {
 
 /* ... Search form ...*/
 
+.header-title h1, p {
+    margin: 10px 0;
+}
 .searchbar {
   display: flex; 
 }
@@ -88,6 +90,10 @@ header {
     color: black;
     outline: 0;
 }
+input::placeholder {
+    opacity: 1;
+    font-family: 'Raleway', sans-serif;
+}
 .buttonsearch1  {
     font-weight: bold;
     font-family: "raleway";
@@ -99,6 +105,7 @@ header {
     padding: 14px;
     margin: 0;
     border-radius: 0 15px 15px 0;
+    cursor: pointer;
 }
 .buttonsearch2  {
     background-color: var(--blue);
@@ -110,6 +117,7 @@ header {
     margin: 0;
     border-radius: 0 15px 15px 0;
     display: none;
+    cursor: pointer;
 }
 
 
@@ -143,6 +151,7 @@ header {
     align-items: center;
     gap: 20px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 .info-icone {
     text-align: center;
@@ -316,6 +325,7 @@ header {
 
 #activity-title {
     padding: 30px 0 5px;
+    margin-top: 25px;
 }
 .displayactivity {
     display: flex;
@@ -351,7 +361,7 @@ header {
 /* ... footer ... */
 
 footer {
-    margin: 50px 35px 0px 35px;
+    margin: 60px 35px 0px 35px;
     background-color: var(--grey);
 }
 .footerlink {
@@ -387,7 +397,7 @@ footer {
         flex-direction: column;
     }
     .filtermenu {
-        min-width: 800px;
+        min-width: 790px;
     }
     .filtermenu ul {
         padding-left: 5px;
@@ -482,7 +492,7 @@ footer {
     }
     .search {
         width: 80%;
-        min-width: 80px;
+        min-width: 80p;
     }
     .buttonsearch1 {
         display: none;
@@ -516,17 +526,8 @@ footer {
         padding: 14px 5px;
         margin-right: 70px;
     }
-    .fa-dog {
+    .fa-dog, .fa-heart, .fa-person, .fa-money-bill-wave {
         margin-right: 10px;
-    }
-    .fa-heart {
-        margin-right: 10px;
-    }
-    .fa-person {
-        margin-right: 10px;
-    }
-    .fa-money-bill-wave {
-        margin-right: 10px;  
     }
     .filtermenu ul li {
         margin: 10px 5px;
