@@ -614,6 +614,7 @@ footer {
     }
     footer {
         margin: 0 auto;
+        margin-top: 60px;
     }
     .footerlink {
         flex-direction: column;
